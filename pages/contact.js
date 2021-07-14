@@ -1,10 +1,12 @@
-import ContactForm from '../components/ContactForm'
-
+import ContactForm from "../components/ContactForm"
+import Layout from "../components/Layout"
 
 export default function Contact() {
   return (
-    <div>
-       <ContactForm />
-    </div>
+    <Layout>
+      <div id="contact">
+        <ContactForm />
+      </div>
+    </Layout>
   )
 }

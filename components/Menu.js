@@ -1,25 +1,25 @@
-import Link from 'next/link';
+import Link from "next/link"
 
 const Menu = () => (
   <ul className="menu">
-    <li>
+    {/* <li>
       <Link href="/">
         <a>Home</a>
       </Link>
-    </li>
+    </li> */}
     <li>
       <Link href="/services">
         <a>Services</a>
       </Link>
     </li>
     <li>
-      <Link href="/portfolio">
-        <a>Portfolio</a>
+      <Link href="/about">
+        <a>About</a>
       </Link>
     </li>
     <li>
-      <Link href="/about">
-        <a>About</a>
+      <Link href="/contact">
+        <a>Contact</a>
       </Link>
     </li>
     <style jsx>{`
@@ -55,6 +55,6 @@ const Menu = () => (
       }
     `}</style>
   </ul>
-);
+)
 
-export default Menu;
+export default Menu
