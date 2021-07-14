@@ -14,7 +14,7 @@ const Homepage = () => (
     <div className="cover">
       <div className="hello">
         {/* <h4 id="em">Todd and Emily Huyett</h4> */}
-        <h5 className="heading">digital-storefront and web design</h5>
+        <h4 className="heading">Online Storefront and Checkout Design</h4>
         <div><span className="s">toddhuyett@gmail.com</span>|<span className="s">703-635-9598</span></div>
         <Link href="/services">
           <a className="view-more">our services</a>

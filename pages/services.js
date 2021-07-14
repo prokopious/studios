@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Layout from "../components/Layout"
 
 const Services = () => (
   <Layout title="Our Services">
@@ -8,14 +8,13 @@ const Services = () => (
         <div className="item">
           <img src="/static/services/prod.jpeg" />
           <h2>Product Photography</h2>
-          <p>Let us handle the tedius task of photographing your inventory.</p>
+          <p>Let us handle the tedious task of photographing your inventory.</p>
         </div>
         <div className="item">
           <img src="/static/services/checkout.jpeg" />
           <h2>Digital Storefronts</h2>
           <p>We create custom online shopping and checkout experiences.</p>
         </div>
- 
       </div>
     </div>
     <style jsx>{`
@@ -52,6 +51,6 @@ const Services = () => (
       }
     `}</style>
   </Layout>
-);
+)
 
-export default Services;
+export default Services
