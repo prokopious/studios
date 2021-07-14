@@ -6,25 +6,16 @@ const Services = () => (
     <div className="services">
       <div className="services-list">
         <div className="item">
-          <img src="/static/services/weddings.jpg" />
-          <h2>Weddings</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
+          <img src="/static/services/prod.jpeg" />
+          <h2>Product Photography</h2>
+          <p>Let us handle the tedius task of photographing your inventory.</p>
         </div>
         <div className="item">
-          <img src="/static/services/portraits.jpg" />
-          <h2>Portraits</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
+          <img src="/static/services/checkout.jpeg" />
+          <h2>Digital Storefronts</h2>
+          <p>We create custom online shopping and checkout experiences.</p>
         </div>
-        <div className="item">
-          <img src="/static/services/real-estate.jpg" />
-          <h2>Real Estate</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
-        </div>
-        <div className="item">
-          <img src="/static/services/travel.jpg" />
-          <h2>Travel</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
-        </div>
+ 
       </div>
     </div>
     <style jsx>{`

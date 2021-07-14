@@ -13,10 +13,11 @@ const Homepage = () => (
   <Layout>
     <div className="cover">
       <div className="hello">
-        <h3 id="em">Todd and Emily Huyett</h3>
-        <div>e-commerce and point-of-sale design</div>
+        {/* <h4 id="em">Todd and Emily Huyett</h4> */}
+        <h5 className="heading">digital-storefront and web design</h5>
+        <div><span className="s">toddhuyett@gmail.com</span>|<span className="s">703-635-9598</span></div>
         <Link href="/services">
-          <a className="view-more">learn more</a>
+          <a className="view-more">our services</a>
         </Link>
       </div>
     </div>
@@ -33,7 +34,7 @@ const Homepage = () => (
       .cover {
         position: relative;
         min-height: 600px;
-        background: transparent url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center;
+        background: transparent url(https://www.linkpicture.com/q/office2.jpg) no-repeat center center;
         background-size: cover;
       }
       .hello {
@@ -43,6 +44,11 @@ const Homepage = () => (
         background: #fff;
         padding: 30px;
       }
+
+      .heading {
+        margin: 0px;
+        margin-top: 10px;
+      }
       .hello h1 {
         margin: 0 0 10px 0;
       }
@@ -50,7 +56,10 @@ const Homepage = () => (
         text-transform: uppercase;
         font-size: 16px;
       }
-
+.s {
+padding: 5px;
+font-size: 16px;
+}
       #em {
 margin-bottom: 0px;
       }
