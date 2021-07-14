@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 const About = () => (
   <Layout title="About">
     <form
-      name="contact"
+      form-name="contact"
       data-netlify-recaptcha="true"
       method="POST"
       data-netlify="true"
