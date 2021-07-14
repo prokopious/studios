@@ -1,27 +1,41 @@
-import Layout from '../components/Layout';
+import Layout from "../components/Layout"
 
 const About = () => (
   <Layout title="About">
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+    <form
+      name="contact"
+      data-netlify-recaptcha="true"
+      method="POST"
+      data-netlify="true"
+    >
+      <p>
+        <label>
+          Your Name: <input type="text" name="name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Email: <input type="email" name="email" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Role:{" "}
+          <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>
+          Message: <textarea name="message"></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
     <style jsx>{`
       .company-info {
         margin: 0 0 50px 0;
@@ -44,7 +58,6 @@ const About = () => (
         float: right;
         margin: 10px 0 20px 20px;
         width: 100x;
-       
       }
       @media (max-width: 600px) {
         .about-text img {
@@ -55,7 +68,6 @@ const About = () => (
       }
     `}</style>
   </Layout>
-);
+)
 
-export default About;
-
+export default About
