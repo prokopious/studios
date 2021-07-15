@@ -16,7 +16,7 @@ const Layout = props => (
 
     <div className="content-wrapper">{props.children}</div>
 
-    <Footer />
+    {/* <Footer /> */}
 
     <style jsx global>{`
       *,
@@ -73,6 +73,7 @@ const Layout = props => (
       .content-wrapper {
         min-height: 600px;
         text-align: center;
+
       }
     `}</style>
   </div>

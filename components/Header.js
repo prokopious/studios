@@ -11,11 +11,15 @@ const Header = () => (
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid rgb(194, 194, 194);
+  
       }
       @media (max-width: 600px) {
         .header-wrapper {
+        
           display: block;
           text-align: center;
+          border-bottom: 1px solid rgb(214, 213, 213);
         }
       }
     `}</style>

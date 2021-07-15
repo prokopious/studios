@@ -2,7 +2,8 @@ import Layout from '../components/Layout';
 
 const About = () => (
   <Layout title="About">
-    <h1>Our Company</h1>
+    <div id="about">
+    <h1 id="h">Our Company</h1>
 
     <div className="about-text">
       <img src="/static/us2.jpg" />
@@ -22,13 +23,27 @@ const About = () => (
         auctor mollis. Phasellus eget augue ac nibh vestibulum pellentesque. Nulla enim augue, placerat id malesuada at,
         maximus sed tortor.
       </p>
-    </div>
+    </div></div>
     <style jsx>{`
       .company-info {
-        margin: 0 0 50px 0;
+        margin: 0;
         padding: 0;
         list-style: none;
         font-size: 18px;
+      }
+
+      #about {
+
+     
+        
+        margin-top: 0px;
+     
+      }
+
+      #h {
+        margin-top: 0px;
+        padding-top: 20px;
+        font-size: 30px;
       }
       .company {
         font-weight: 700;
@@ -38,7 +53,7 @@ const About = () => (
         color: #777;
         text-align: left;
         max-width: 800px;
-        margin: 0 auto 100px;
+        margin: 0 auto 0px;
         padding: 20px;
       }
       img {

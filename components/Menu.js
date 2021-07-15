@@ -44,7 +44,7 @@ const Menu = () => (
       @media (max-width: 600px) {
         .menu {
           display: block;
-          margin-top: 20px;
+          margin-top: 0px;
         }
         .menu li {
           display: inline-block;

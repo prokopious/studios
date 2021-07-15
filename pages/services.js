@@ -2,18 +2,18 @@ import Layout from "../components/Layout"
 
 const Services = () => (
   <Layout title="Our Services">
-    <h1>Our Services</h1>
+    <h1 id="h" className="he">Our Services</h1>
     <div className="services">
       <div className="services-list">
         <div className="item">
           <img src="/static/services/prod.jpeg" />
-          <h2>Product Photography</h2>
-          <p>Let us handle the tedious task of photographing your inventory.</p>
+          <h2 className="he">Product Photography</h2>
+          {/* <p>Let us handle the tedious task of photographing your inventory.</p> */}
         </div>
         <div className="item">
           <img src="/static/services/checkout.jpeg" />
-          <h2>Digital Storefronts</h2>
-          <p>We create custom online shopping and checkout experiences.</p>
+          <h2 className="he">Digital Storefronts</h2>
+          {/* <p className='pe'>We create custom online shopping and checkout experiences.</p> */}
         </div>
       </div>
     </div>
@@ -28,6 +28,14 @@ const Services = () => (
         flex-wrap: wrap;
         justify-content: space-between;
       }
+
+      #h {
+        margin-top: 0;
+        padding-top: 20px;
+      }
+      .he {
+  font-size: 30px;
+}
       .services .item {
         padding: 20px;
         margin-bottom: 40px;
@@ -35,6 +43,7 @@ const Services = () => (
       }
       img {
         max-width: 100%;
+        border-radius: 4px;
       }
       h2 {
         margin: 0 0 5px 0;
@@ -48,6 +57,10 @@ const Services = () => (
           width: auto;
           padding: 10px 20px;
         }
+
+        .he {
+  font-size: 18px;
+}
       }
     `}</style>
   </Layout>

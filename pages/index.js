@@ -43,6 +43,8 @@ const Homepage = () => (
         left: 60px;
         background: #fff;
         padding: 30px;
+        border-radius: 3px;
+        box-shadow: 0px 1px;
       }
 
       .heading {
@@ -72,12 +74,15 @@ margin-bottom: 0px;
         .hello {
           left: 30px;
           right: 30px;
-          font-size: 18px;
+          font-size: 16px;
           padding: 20px;
         }
-        h1 {
-          font-size: 28px;
-        }
+        .heading {
+        margin: 0px;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+  
       }
     `}</style>
   </Layout>
