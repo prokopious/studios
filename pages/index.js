@@ -78,7 +78,7 @@ margin-bottom: 0px;
           padding: 10px;
         }
 
-        s. {
+        .s {
           font-size: 14px;
         }
         .heading {
