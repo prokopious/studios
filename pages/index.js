@@ -75,7 +75,11 @@ margin-bottom: 0px;
           left: 30px;
           right: 30px;
           font-size: 16px;
-          padding: 20px;
+          padding: 10px;
+        }
+
+        s. {
+          font-size: 14px;
         }
         .heading {
         margin: 0px;

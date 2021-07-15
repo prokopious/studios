@@ -31,10 +31,10 @@ const Services = () => (
 
       #h {
         margin-top: 0;
-        padding-top: 20px;
+        padding-top: 30px;
       }
       .he {
-  font-size: 30px;
+  font-size: 22px;
 }
       .services .item {
         padding: 20px;

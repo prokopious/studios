@@ -42,8 +42,8 @@ const About = () => (
 
       #h {
         margin-top: 0px;
-        padding-top: 20px;
-        font-size: 30px;
+        padding-top: 30px;
+        font-size: 22px;
       }
       .company {
         font-weight: 700;
