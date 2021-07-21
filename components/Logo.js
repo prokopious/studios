@@ -13,6 +13,10 @@ const Logo = () => (
         display: block;
         width: 220px;
       }
+
+      #hanover {
+        color: gray;
+      }
       @media (max-width: 600px) {
         .logo {
           display: inline-block;

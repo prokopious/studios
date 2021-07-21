@@ -1,0 +1,17 @@
+$navbar-background-color: rgb(230, 230, 230);
+$navbar-item-color: black;
+@import "node_modules/bulma/bulma.sass";
+$blend: hard-light;
+#boxy {
+
+  background-color: $navbar-background-color;
+mix-blend-mode: $blend;
+}
+
+.navbar {
+  mix-blend-mode: $blend;
+}
+
+* {
+  font-family: Questrial;
+}

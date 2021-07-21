@@ -7,11 +7,15 @@ const Header = () => (
     <Menu />
     <style jsx>{`
       .header-wrapper {
+
         padding: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid rgb(194, 194, 194);
+    
+
+  box-shadow: 0px 2px 5px #5e5e5e36;
+  border-bottom: 1px solid #5e5e5e36;
   
       }
       @media (max-width: 600px) {
@@ -19,7 +23,7 @@ const Header = () => (
         
           display: block;
           text-align: center;
-          border-bottom: 1px solid rgb(214, 213, 213);
+
         }
       }
     `}</style>

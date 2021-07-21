@@ -1,95 +1,102 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
-import Gallery from '../components/Gallery';
-
-const images = [
-  '/static/portfolio/14.jpg',
-  '/static/portfolio/13.jpg',
-  '/static/portfolio/12.jpg',
-  '/static/portfolio/11.jpg'
-];
+import Layout from "../components/Layout"
 
 const Homepage = () => (
-  <Layout>
-    <div className="cover">
-      <div className="hello">
-        {/* <h4 id="em">Todd and Emily Huyett</h4> */}
-        <h4 className="heading">Online Storefront and Checkout Design</h4>
-        <div><span className="s">toddhuyett@gmail.com</span>|<span className="s">703-635-9598</span></div>
-        <Link href="/services">
-          <a className="view-more">our services</a>
-        </Link>
+  <div className="cover">
+    <Layout>
+      <div id="other">
+        <div id="boxy">
+          <div id="design">Digital Storefront Design</div>
+          <div id="email">703-635-9598</div>
+          <div id="email">toddhuyett@gmail.com</div>{" "}
+        </div>
       </div>
-    </div>
-    <div className="latest-work">
-      <h2>Recent Projects</h2>
-      <Gallery images={images} />
-      <div className="">
-        <Link href="/portfolio">
-          <a className="view-more">View All</a>
-        </Link>
-      </div>
-    </div>
+    </Layout>
     <style jsx>{`
+      #design {
+        font-size: calc(30px);
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+      }
+
+      #email {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      #boxy {
+        padding-top: calc(2em + 0.7vw);
+        padding-bottom: calc(2em + 0.7vw);
+        padding-right: calc(0em + 0.7vw);
+        padding-left: calc(0em + 0.7vw);
+      
+   
+        background-color: $navbar-background-color;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
+        border-radius: 3px;
+        max-width: 500px;
+      }
       .cover {
         position: relative;
         min-height: 600px;
-        background: transparent url(https://www.linkpicture.com/q/office2.jpg) no-repeat center center;
+        mix-blend-mode: darken;
+        background: url("../static/st.jpg") no-repeat center center;
         background-size: cover;
       }
-      .hello {
-        position: absolute;
-        top: 60px;
-        left: 60px;
-        background: #fff;
-        padding: 30px;
-        border-radius: 3px;
-        box-shadow: 0px 1px;
+
+      #other {
+        padding-top: 3vw;
+        padding-bottom: 0;
+        padding-right: 45vw;
+        padding-left: 3vw;
       }
 
-      .heading {
-        margin: 0px;
-        margin-top: 10px;
+      @media (max-width: 900px) {
+        #design {
+          font-size: calc(25px);
+          font-weight: 600;
+          color: black;
+        }
+        #boxy {
+          padding-top: calc(2em + 0.7vw);
+          padding-bottom: calc(2em + 0.7vw);
+          padding-right: calc(.75em + 0.7vw);
+          padding-left: calc(.75em + 0.7vw);
+
+      
+       
+          background-color: $navbar-background-color;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
+          border-radius: 3px;
+        }
+        #other {
+        padding-top: 5vw;
+        padding-bottom: 0;
+        padding-right: 7vw;
+        padding-left: 7vw;
       }
-      .hello h1 {
-        margin: 0 0 10px 0;
+
+
       }
-      a.view-more {
-        text-transform: uppercase;
-        font-size: 16px;
-      }
-.s {
-padding: 5px;
-font-size: 16px;
-}
-      #em {
-margin-bottom: 0px;
-      }
-      .latest-work {
-        text-align: center;
-        padding: 30px 0;
-        margin-bottom: 60px;
-      }
-      @media (max-width: 480px) {
-        .hello {
-          left: 30px;
-          right: 30px;
-          font-size: 16px;
-          padding: 10px;
+
+      @media (max-width: 600px) {
+        #design {
+          font-size: calc(16px + 1vw);
+          font-weight: 600;
+          color: black;
         }
 
-        .s {
-          font-size: 14px;
+        #boxy {
+          padding-right: calc(.5em + 0.7vw);
+          padding-left: calc(.5em + 0.7vw);
+          padding-top: calc(2em + 0.7vw);
+          padding-bottom: calc(2em + 0.7vw);
+          background-color: $navbar-background-color;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
+          border-radius: 3px;
         }
-        .heading {
-        margin: 0px;
-        margin-top: 10px;
-        font-size: 14px;
-      }
-  
       }
     `}</style>
-  </Layout>
-);
+  </div>
+)
 
-export default Homepage;
+export default Homepage

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Nav from '../components/Nav'
 
 const Layout = props => (
   <div className="site-wrapper">
@@ -12,7 +13,8 @@ const Layout = props => (
       {props.description ? <meta name="description" content={props.description} /> : null}
     </Head>
 
-    <Header />
+    {/* <Header /> */}
+    <Nav />
 
     <div className="content-wrapper">{props.children}</div>
 

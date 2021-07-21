@@ -2,7 +2,6 @@
   "name": "rt-fistudio",
   "version": "1.0.0",
   "description": "A demo website for the React &amp; Next.js guide",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,14 +14,20 @@
   },
   "keywords": [],
   "author": "",
+  "main": "index.js",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kheruc/rt-fistudio/issues"
   },
   "homepage": "https://github.com/kheruc/rt-fistudio#readme",
   "dependencies": {
+    "bulma": "^0.9.3",
     "next": "^9.0.5",
     "react": "^16.9.0",
+    "react-bulma-components": "^4.0.7",
     "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
   }
 }

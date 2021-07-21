@@ -30,8 +30,8 @@ const Menu = () => (
         display: flex;
       }
       .menu li a {
-        font-size: 22px;
-        color: #111;
+        font-size: 20px;
+        color: gray;
         font-weight: 300;
         padding: 5px 2px;
         margin: 0 10px;
@@ -39,7 +39,7 @@ const Menu = () => (
       }
       .menu li a:hover {
         padding-bottom: 3px;
-        border-bottom: 2px solid #ffe525;
+        border-bottom: 2px solid #a1a1a1;
       }
       @media (max-width: 600px) {
         .menu {
