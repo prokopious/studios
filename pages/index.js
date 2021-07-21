@@ -39,7 +39,7 @@ const Homepage = () => (
         position: relative;
         min-height: 600px;
         mix-blend-mode: darken;
-        background: url("../static/st.jpg") no-repeat center center;
+        background: url("../static/st2.jpg") no-repeat center center;
         background-size: cover;
       }
 
