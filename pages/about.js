@@ -1,5 +1,5 @@
 import Layout from "../components/Layout"
-import Nav from '../components/Nav'
+import Nav from "../components/Nav"
 
 const About = () => (
   <Layout title="About">
@@ -9,13 +9,17 @@ const About = () => (
         <h3 id="h">Our Company</h3>
         <div className="about-text">
           <p>
-          Garam masala can be made from many different spices, but some of the most common are cinnamon, peppercorns, cardamom, mustard seeds, coriander seeds, cloves, mace, and nutmeg. Garam masala can be made from many different spices, but some of the most common are cinnamon, peppercorns, cardamom, mustard seeds, coriander seeds, cloves, mace, and nutmeg.
+            Garam masala can be made from many different spices, but some of the
+            most common are cinnamon, peppercorns, cardamom, mustard seeds,
+            coriander seeds, cloves, mace, and nutmeg. Garam masala can be made
+            from many different spices, but some of the most common are
+            cinnamon, peppercorns, cardamom, mustard seeds, coriander seeds,
+            cloves, mace, and nutmeg.
           </p>
         </div>{" "}
         <h3 id="h">Our Team</h3>
         <div className="cont">
           <div className="row">
-       
             <div className="our-team">
               <div className="picture">
                 <img className="img-fluid" src="/static/todd.jpg" />
@@ -34,8 +38,6 @@ const About = () => (
                 <h4 className="title">Web Designer</h4>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
@@ -51,6 +53,7 @@ const About = () => (
       .our-team {
         padding: 50px 40px;
         margin-bottom: 30px;
+
         mix-blend-mode: multiply;
         background-color: #ffffff;
         text-align: center;
@@ -58,7 +61,7 @@ const About = () => (
         position: relative;
         border-radius: 4px;
         box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
-              5px 5px 12px rgba(99, 92, 1, 0.219);
+          5px 5px 12px rgba(99, 92, 1, 0.219);
       }
 
       .our-team .picture {
@@ -67,6 +70,7 @@ const About = () => (
         width: 130px;
         margin-bottom: 20px;
         z-index: 1;
+
         position: relative;
       }
 
@@ -98,21 +102,13 @@ const About = () => (
       .cover {
         position: relative;
         min-height: 600px;
-        background: rgb(116, 213, 194);
-          background: linear-gradient(
-            70deg,
-            rgba(116, 213, 194, 1) 0%,
-            rgba(116, 213, 194, 0.804359243697479) 10%,
-            rgba(116, 213, 194, 0.5970763305322129) 20%,
-            rgba(116, 213, 194, 0.39539565826330536) 30%,
-            rgba(116, 213, 194, 0.2049194677871149) 40%,
-            rgba(116, 213, 194, 0.2049194677871149) 50%,
-            rgba(116, 213, 194, 0.2049194677871149) 60%,
-            rgba(116, 213, 194, 0.4009978991596639) 70%,
-            rgba(116, 213, 194, 0.6026785714285714) 80%,
-            rgba(116, 213, 194, 0.804359243697479) 90%,
-            rgba(116, 213, 194, 1) 100%
-          );
+        background: rgb(247, 255, 147);
+        background: linear-gradient(
+          90deg,
+          rgba(247, 255, 147, 1) 0%,
+          rgba(247, 255, 147, 0.4962359943977591) 50%,
+          rgba(247, 255, 147, 1) 100%
+        );
       }
 
       #about {
@@ -122,11 +118,10 @@ const About = () => (
       #h {
         margin-top: 0;
         padding-top: 30px;
-    
+
         font-size: 24px;
         font-weight: 600;
         color: rgb(47, 47, 47);
-     
       }
       .company {
         font-weight: 700;
@@ -147,13 +142,13 @@ const About = () => (
         padding: 50px;
         border-radius: 4px;
         box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
-              5px 5px 12px rgba(99, 92, 1, 0.219);
-
+          5px 5px 12px rgba(99, 92, 1, 0.219);
       }
       img {
         float: right;
         margin: 10px 0 20px 20px;
         width: 100x;
+        mix-blend-mode: normal;
       }
       @media (max-width: 600px) {
         .about-text img {
@@ -164,9 +159,8 @@ const About = () => (
 
         #h {
           padding-top: 25px;
-        padding-bottom: 0px;
-        font-size: 20px;
-       
+          padding-bottom: 0px;
+          font-size: 20px;
         }
         .row {
           display: grid;
