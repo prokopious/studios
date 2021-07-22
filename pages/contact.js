@@ -1,10 +1,12 @@
 import ContactForm from "../components/ContactForm"
 import Layout from "../components/Layout"
+import Nav from '../components/Nav'
 
 export default function Contact() {
   return (
     <Layout>
       <div className="cover" id="contact">
+      <Nav bg="white" mode="multiply" />
       <h3 id="h">Contact Us</h3>
         <ContactForm />
       </div>
@@ -13,17 +15,16 @@ export default function Contact() {
       #h {
           margin-top: 0;
         padding-top: 30px;
-        padding-bottom: 20px;
+      
         font-size: 24px;
         font-weight: 600;
         }
         .cover {
           position: relative;
           min-height: 600px;
-          background:
-          url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
-          no-repeat center center;
-        background-size: cover;
+       padding-bottom: 300px;
+          background: rgb(251,251,189);
+background: linear-gradient(90deg, rgba(251,251,189,1) 0%, rgba(251,251,189,0) 50%, rgba(251,251,189,1) 100%);
 
         }
 

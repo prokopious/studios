@@ -23,8 +23,9 @@ export default function ContactForm() {
   width: 400px;
   height: 35px;
   border-radius: 3px;
-  border: 1px solid #5e5e5e36;
-  box-shadow: 0px 3px 5px #5e5e5e36;
+  border: transparent;
+  box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
+              5px 5px 12px rgba(63, 59, 1, 0.219);
   padding-left: 5px;
 }
 
@@ -32,8 +33,10 @@ export default function ContactForm() {
   border-radius: 3px;
   background-color: rgb(255, 255, 255);
   padding: 3px 27px;
-  border: 1px solid #5e5e5e36;
-  box-shadow: 0px 3px 5px #5e5e5e36;
+  border: transparent;
+
+  box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
+              5px 5px 12px rgba(63, 59, 1, 0.219);
   color: gray;
 }
 
@@ -42,11 +45,11 @@ export default function ContactForm() {
   margin-top: 5px;
   height: 200px;
   border-radius: 3px;
-  border: #5e5e5e36;
- 
+
+  border: transparent;
   padding: 5px;
-  border: 1px solid #5e5e5e36;
-        box-shadow: 0px 3px 5px #5e5e5e36;
+  box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
+              5px 5px 12px rgba(63, 59, 1, 0.219);
 }
       
       

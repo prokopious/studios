@@ -1,13 +1,15 @@
 import Layout from "../components/Layout"
+import Nav from "../components/Nav"
 
 const Homepage = () => (
   <div className="cover">
+    <Nav mode="hard-light" />
     <Layout>
       <div id="other">
         <div id="boxy">
           <div id="design">Digital Storefront Design</div>
-          <div id="email">703-635-9598</div>
-          <div id="email">toddhuyett@gmail.com</div>{" "}
+          <div id="email">804-548-3245</div>
+          <div id="email">hanoverwebstudios@gmail.com</div>{" "}
         </div>
       </div>
     </Layout>
@@ -28,8 +30,8 @@ const Homepage = () => (
         padding-bottom: calc(2em + 0.7vw);
         padding-right: calc(0em + 0.7vw);
         padding-left: calc(0em + 0.7vw);
-      
-   
+        mix-blend-mode: hard-light;
+
         background-color: $navbar-background-color;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
         border-radius: 3px;
@@ -59,23 +61,21 @@ const Homepage = () => (
         #boxy {
           padding-top: calc(2em + 0.7vw);
           padding-bottom: calc(2em + 0.7vw);
-          padding-right: calc(.75em + 0.7vw);
-          padding-left: calc(.75em + 0.7vw);
+          padding-right: calc(0.75em + 0.7vw);
+          padding-left: calc(0.75em + 0.7vw);
 
-      
-       
+          mix-blend-mode: hard-light;
+
           background-color: $navbar-background-color;
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
           border-radius: 3px;
         }
         #other {
-        padding-top: 5vw;
-        padding-bottom: 0;
-        padding-right: 7vw;
-        padding-left: 7vw;
-      }
-
-
+          padding-top: 5vw;
+          padding-bottom: 0;
+          padding-right: 7vw;
+          padding-left: 7vw;
+        }
       }
 
       @media (max-width: 600px) {
@@ -86,8 +86,8 @@ const Homepage = () => (
         }
 
         #boxy {
-          padding-right: calc(.5em + 0.7vw);
-          padding-left: calc(.5em + 0.7vw);
+          padding-right: calc(0.5em + 0.7vw);
+          padding-left: calc(0.5em + 0.7vw);
           padding-top: calc(2em + 0.7vw);
           padding-bottom: calc(2em + 0.7vw);
           background-color: $navbar-background-color;

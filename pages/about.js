@@ -1,8 +1,10 @@
 import Layout from "../components/Layout"
+import Nav from '../components/Nav'
 
 const About = () => (
   <Layout title="About">
     <div className="cover">
+      <Nav bg="white" mode="multiply" />
       <div id="about">
         <h3 id="h">Our Company</h3>
         <div className="about-text">
@@ -49,13 +51,14 @@ const About = () => (
       .our-team {
         padding: 50px 40px;
         margin-bottom: 30px;
+        mix-blend-mode: multiply;
         background-color: #ffffff;
         text-align: center;
         overflow: hidden;
         position: relative;
-        border-radius: 3px;
-        box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.233),
-          5px 5px 5px rgba(0, 0, 0, 0.116);
+        border-radius: 4px;
+        box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
+              5px 5px 12px rgba(99, 92, 1, 0.219);
       }
 
       .our-team .picture {
@@ -95,10 +98,10 @@ const About = () => (
       .cover {
         position: relative;
         min-height: 600px;
-        background: url(https://images.unsplash.com/photo-1573641287741-f6e223d81a0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80) no-repeat
-          center center;
-        background-size: cover;
-        background-color: black;
+        background: rgb(251,251,189);
+background: linear-gradient(90deg, rgba(251,251,189,1) 0%, rgba(251,251,189,0) 50%, rgba(251,251,189,1) 100%);
+      
+
       }
 
       #about {
@@ -108,11 +111,11 @@ const About = () => (
       #h {
         margin-top: 0;
         padding-top: 30px;
-        padding-bottom: 20px;
+    
         font-size: 24px;
         font-weight: 600;
-        color: rgb(53, 53, 53);
-        text-shadow: 0px 2px 0px rgb(255, 255, 255);
+        color: rgb(29, 29, 29);
+     
       }
       .company {
         font-weight: 700;
@@ -125,14 +128,15 @@ const About = () => (
       .about-text {
         color: #777;
         text-align: left;
+        mix-blend-mode: multiply;
         max-width: 800px;
         margin: 0 auto 0px;
         font-size: 15px;
         background-color: white;
         padding: 50px;
-        border-radius: 3px;
-        box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.233),
-          5px 5px 5px rgba(0, 0, 0, 0.116);
+        border-radius: 4px;
+        box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
+              5px 5px 12px rgba(99, 92, 1, 0.219);
 
       }
       img {
@@ -145,6 +149,11 @@ const About = () => (
           float: none;
           display: block;
           margin: 0 auto 30px;
+        }
+
+        #h {
+          padding-top: 25px;
+        padding-bottom: 0px;
         }
         .row {
           display: grid;

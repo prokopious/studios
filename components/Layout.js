@@ -14,7 +14,7 @@ const Layout = props => (
     </Head>
 
     {/* <Header /> */}
-    <Nav />
+   
 
     <div className="content-wrapper">{props.children}</div>
 
