@@ -114,7 +114,7 @@ background: linear-gradient(90deg, rgba(251,251,189,1) 0%, rgba(251,251,189,0) 5
     
         font-size: 24px;
         font-weight: 600;
-        color: rgb(29, 29, 29);
+        color: rgb(47, 47, 47);
      
       }
       .company {
@@ -154,6 +154,8 @@ background: linear-gradient(90deg, rgba(251,251,189,1) 0%, rgba(251,251,189,0) 5
         #h {
           padding-top: 25px;
         padding-bottom: 0px;
+        font-size: 20px;
+       
         }
         .row {
           display: grid;

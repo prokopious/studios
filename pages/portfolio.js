@@ -72,6 +72,11 @@ const Portfolio = () => {
           }
 
           @media (max-width: 700px) {
+
+            #h {
+              font-size: 20px;
+              color: rgb(47, 47, 47);
+            }
             .gallery {
               grid-template-columns: 1fr;
               grid-gap: 15px;
