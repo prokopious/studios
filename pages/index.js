@@ -8,8 +8,8 @@ const Homepage = () => (
       <div id="other">
         <div id="boxy">
           <div id="design">Digital Storefront Design</div>
-          <div id="email">804-548-3245</div>
           <div id="email">hanoverwebstudios@gmail.com</div>{" "}
+          <div id="phone">804-548-3245</div>
         </div>
       </div>
     </Layout>
@@ -28,10 +28,7 @@ const Homepage = () => (
       #boxy {
         padding-top: calc(2em + 0.7vw);
         padding-bottom: calc(2em + 0.7vw);
-        padding-right: calc(0em + 0.7vw);
-        padding-left: calc(0em + 0.7vw);
         mix-blend-mode: hard-light;
-
         background-color: $navbar-background-color;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
         border-radius: 3px;
@@ -48,8 +45,12 @@ const Homepage = () => (
       #other {
         padding-top: 3vw;
         padding-bottom: 0;
-        padding-right: 45vw;
+        padding-right: 55vw;
         padding-left: 3vw;
+      }
+
+      #phone {
+        font-size: 20px;
       }
 
       @media (max-width: 900px) {
@@ -61,11 +62,8 @@ const Homepage = () => (
         #boxy {
           padding-top: calc(2em + 0.7vw);
           padding-bottom: calc(2em + 0.7vw);
-          padding-right: calc(0.75em + 0.7vw);
-          padding-left: calc(0.75em + 0.7vw);
 
           mix-blend-mode: hard-light;
-
           background-color: $navbar-background-color;
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
           border-radius: 3px;
@@ -73,8 +71,15 @@ const Homepage = () => (
         #other {
           padding-top: 5vw;
           padding-bottom: 0;
-          padding-right: 7vw;
-          padding-left: 7vw;
+          padding-right: 10vw;
+          padding-left: 10vw;
+        }
+        #email {
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #phone {
+          font-size: 16px;
         }
       }
 

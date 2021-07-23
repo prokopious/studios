@@ -102,7 +102,9 @@ const About = () => (
       .cover {
         position: relative;
         min-height: 600px;
-        background-image: linear-gradient(to right, #feada6 0%, #f5efef 100%);
+        background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
       }
 
       #about {

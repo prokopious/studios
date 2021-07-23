@@ -47,7 +47,7 @@ const Portfolio = () => {
           img {
             border-radius: 5px;
           
-            margin: 15px;
+
             border-radius: 5px;
     
 
@@ -81,28 +81,25 @@ const Portfolio = () => {
 
         
           #h {
-            padding-bottom: 0;
-              margin-bottom: 15px;
-              margin-top: 0px;
-              padding-top: 30px;
-            font-size: 24px;
-            font-weight: 600;
-            color: rgb(77, 77, 77);
+            margin-top: 0;
+        padding-top: 30px;
+
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(47, 47, 47);
           }
 
           @media (max-width: 700px) {
             #h {
-              font-size: 20px;
-              padding-bottom: 0;
-              margin-bottom: 5px;
-              margin-top: 0px;
-              padding-top: 20px;
+              padding-top: 25px;
+          padding-bottom: 0px;
+          font-size: 20px;
          
    
             }
             .gallery {
               grid-template-columns: 1fr;
-              grid-gap: 5px;
+              grid-gap: 25px;
               margin-bottom: 200px;
               max-width: 400px;
               margin: 0 auto;
