@@ -40,52 +40,77 @@ const Portfolio = () => {
 
           #cover {
             position: relative;
-            background-color: #8ec5fc;
-            background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
             background-size: cover;
           }
           img {
             border-radius: 5px;
+          
+            margin: 15px;
+            border-radius: 5px;
+    
+
           }
+
+     
+    
           .image {
             border-radius: 5px;
-            box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
-              5px 5px 12px rgba(0, 0, 0, 0.336);
+           
+            transition: all 500ms ease-out;
+      
+    
+          }
+          .image:hover {
+            padding: 0px;
+            transform: scale(1.05);
+          }
+          .image2 {
+            border-radius: 5px;
+     
+      
+    
+          }
+          .image2:hover {
+            padding: 0;
+            transition: all 500ms ease-out;
+            border-radius: 5px;
+          }
+    
 
-            background-color: rgba(255, 255, 255, 0.164);
-          }
-          .label {
-            font-size: 16px;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: rgba(0, 0, 0, 0.774);
-          }
+        
           #h {
-            margin-top: 0;
-            padding-top: 30px;
             padding-bottom: 0;
+              margin-bottom: 15px;
+              margin-top: 0px;
+              padding-top: 30px;
             font-size: 24px;
             font-weight: 600;
-            color: rgba(0, 0, 0, 0.664);
+            color: rgb(77, 77, 77);
           }
 
           @media (max-width: 700px) {
             #h {
               font-size: 20px;
-              color: rgb(47, 47, 47);
+              padding-bottom: 0;
+              margin-bottom: 5px;
+              margin-top: 0px;
+              padding-top: 20px;
+         
+   
             }
             .gallery {
               grid-template-columns: 1fr;
-              grid-gap: 15px;
+              grid-gap: 5px;
               margin-bottom: 200px;
-              max-width: 900px;
+              max-width: 400px;
               margin: 0 auto;
               padding-bottom: 300px;
               padding-left: 10px;
               padding-right: 10px;
               padding-top: 0px;
-              padding-bottom: 20px;
+              padding-bottom: 70px;
             }
             .label {
               font-size: 15px;

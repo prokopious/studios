@@ -60,8 +60,8 @@ const About = () => (
         overflow: hidden;
         position: relative;
         border-radius: 4px;
-        box-shadow: -5px -5px 15px rgba(87, 87, 87, 0.041),
-          5px 5px 12px rgba(99, 92, 1, 0.219);
+        box-shadow: -5px -5px 15px rgba(119, 119, 119, 0.041),
+          5px 5px 12px rgba(49, 49, 49, 0.164);
       }
 
       .our-team .picture {
@@ -102,10 +102,7 @@ const About = () => (
       .cover {
         position: relative;
         min-height: 600px;
-        background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
-
+        background-image: linear-gradient(to right, #feada6 0%, #f5efef 100%);
       }
 
       #about {
@@ -138,8 +135,9 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         background-color: rgba(255, 255, 255, 0);
         padding: 50px;
         border-radius: 4px;
-        box-shadow: -5px -5px 15px rgba(87, 87, 87, 0.041),
-          5px 5px 12px rgba(99, 92, 1, 0.219);
+        box-shadow: -5px -5px 15px rgba(119, 119, 119, 0.041),
+          5px 5px 12px rgba(49, 49, 49, 0.164);
+
       }
       img {
         float: right;

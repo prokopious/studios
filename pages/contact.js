@@ -22,21 +22,7 @@ export default function Contact() {
           position: relative;
           min-height: 600px;
           padding-bottom: 300px;
-          background: rgb(116, 213, 194);
-          background: linear-gradient(
-            70deg,
-            rgba(116, 213, 194, 1) 0%,
-            rgba(116, 213, 194, 0.804359243697479) 10%,
-            rgba(116, 213, 194, 0.5970763305322129) 20%,
-            rgba(116, 213, 194, 0.39539565826330536) 30%,
-            rgba(116, 213, 194, 0.2049194677871149) 40%,
-            rgba(116, 213, 194, 0.2049194677871149) 50%,
-            rgba(116, 213, 194, 0.2049194677871149) 60%,
-            rgba(116, 213, 194, 0.4009978991596639) 70%,
-            rgba(116, 213, 194, 0.6026785714285714) 80%,
-            rgba(116, 213, 194, 0.804359243697479) 90%,
-            rgba(116, 213, 194, 1) 100%
-          );
+          background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
         }
 
         #contact {
