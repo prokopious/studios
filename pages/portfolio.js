@@ -12,13 +12,17 @@ const Portfolio = () => {
             <div>
               {" "}
               <div className="image">
-                <img src={"https://www.linkpicture.com/q/bakery.jpg"} />
+                <a href="https://determined-leakey-9c05aa.netlify.app/">
+                  <img src={"https://www.linkpicture.com/q/bakery.jpg"} />
+                </a>
               </div>
             </div>
 
             <div>
               <div className="image">
-                <img src={"https://www.linkpicture.com/q/farms.jpg"} />
+                <a href="https://hopeful-chandrasekhar-9e044a.netlify.app/">
+                  <img src={"https://www.linkpicture.com/q/farms.jpg"} />
+                </a>
               </div>
             </div>
           </div>
@@ -36,21 +40,8 @@ const Portfolio = () => {
 
           #cover {
             position: relative;
-            background: rgb(116, 213, 194);
-          background: linear-gradient(
-            70deg,
-            rgba(116, 213, 194, 1) 0%,
-            rgba(116, 213, 194, 0.804359243697479) 10%,
-            rgba(116, 213, 194, 0.5970763305322129) 20%,
-            rgba(116, 213, 194, 0.39539565826330536) 30%,
-            rgba(116, 213, 194, 0.2049194677871149) 40%,
-            rgba(116, 213, 194, 0.2049194677871149) 50%,
-            rgba(116, 213, 194, 0.2049194677871149) 60%,
-            rgba(116, 213, 194, 0.4009978991596639) 70%,
-            rgba(116, 213, 194, 0.6026785714285714) 80%,
-            rgba(116, 213, 194, 0.804359243697479) 90%,
-            rgba(116, 213, 194, 1) 100%
-          );
+            background-color: #8ec5fc;
+            background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 
             background-size: cover;
           }
@@ -80,7 +71,6 @@ const Portfolio = () => {
           }
 
           @media (max-width: 700px) {
-
             #h {
               font-size: 20px;
               color: rgb(47, 47, 47);

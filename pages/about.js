@@ -54,13 +54,13 @@ const About = () => (
         padding: 50px 40px;
         margin-bottom: 30px;
 
-        mix-blend-mode: multiply;
-        background-color: #ffffff;
+        mix-blend-mode: hard soft-light;
+        background-color: #ffffff00;
         text-align: center;
         overflow: hidden;
         position: relative;
         border-radius: 4px;
-        box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
+        box-shadow: -5px -5px 15px rgba(87, 87, 87, 0.041),
           5px 5px 12px rgba(99, 92, 1, 0.219);
       }
 
@@ -102,13 +102,10 @@ const About = () => (
       .cover {
         position: relative;
         min-height: 600px;
-        background: rgb(247, 255, 147);
-        background: linear-gradient(
-          90deg,
-          rgba(247, 255, 147, 1) 0%,
-          rgba(247, 255, 147, 0.4962359943977591) 50%,
-          rgba(247, 255, 147, 1) 100%
-        );
+        background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
       }
 
       #about {
@@ -134,14 +131,14 @@ const About = () => (
       .about-text {
         color: #777;
         text-align: left;
-        mix-blend-mode: multiply;
+       
         max-width: 800px;
         margin: 0 auto 0px;
         font-size: 15px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0);
         padding: 50px;
         border-radius: 4px;
-        box-shadow: -5px -5px 15px rgba(230, 230, 230, 0.267),
+        box-shadow: -5px -5px 15px rgba(87, 87, 87, 0.041),
           5px 5px 12px rgba(99, 92, 1, 0.219);
       }
       img {
