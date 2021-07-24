@@ -20,7 +20,7 @@ const Portfolio = () => {
 
             <div>
               <div className="image">
-                <a href="https://hopeful-chandrasekhar-9e044a.netlify.app/">
+                <a href="https://shopify-guoch6x9e-prokopious.vercel.app/">
                   <img src={"https://www.linkpicture.com/q/farms.jpg"} />
                 </a>
               </div>
@@ -46,21 +46,14 @@ const Portfolio = () => {
           }
           img {
             border-radius: 5px;
-          
 
             border-radius: 5px;
-    
-
           }
 
-     
-    
           .image {
             border-radius: 5px;
-           
+
             transition: all 500ms ease-out;
-      
-    
           }
           .image:hover {
             padding: 0px;
@@ -68,34 +61,27 @@ const Portfolio = () => {
           }
           .image2 {
             border-radius: 5px;
-     
-      
-    
           }
           .image2:hover {
             padding: 0;
             transition: all 500ms ease-out;
             border-radius: 5px;
           }
-    
 
-        
           #h {
             margin-top: 0;
-        padding-top: 30px;
+            padding-top: 30px;
 
-        font-size: 24px;
-        font-weight: 600;
-        color: rgb(47, 47, 47);
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(47, 47, 47);
           }
 
           @media (max-width: 700px) {
             #h {
               padding-top: 25px;
-          padding-bottom: 0px;
-          font-size: 20px;
-         
-   
+              padding-bottom: 0px;
+              font-size: 20px;
             }
             .gallery {
               grid-template-columns: 1fr;
