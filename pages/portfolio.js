@@ -20,7 +20,7 @@ const Portfolio = () => {
 
             <div>
               <div className="image">
-                <a href="https://shopify-guoch6x9e-prokopious.vercel.app/">
+                <a href="https://shopify-alpha.vercel.app/">
                   <img src={"https://www.linkpicture.com/q/farms.jpg"} />
                 </a>
               </div>
