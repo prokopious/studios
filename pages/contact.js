@@ -22,8 +22,7 @@ export default function Contact() {
           position: relative;
           min-height: 600px;
           padding-bottom: 300px;
-          background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
-
+          background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
         }
 
         #contact {

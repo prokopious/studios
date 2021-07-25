@@ -111,7 +111,7 @@ const About = () => (
         position: relative;
         padding-bottom: 100px;
         min-height: 600px;
-        background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+        background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
       }
 
       #about {
@@ -161,7 +161,7 @@ const About = () => (
         }
 
         .our-team {
-          margin: 9%;
+          margin: 5%;
           margin-top: 0;
           margin-bottom: 0;
         }
