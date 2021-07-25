@@ -4,12 +4,21 @@ import Nav from "../components/Nav"
 const About = () => (
   <Layout title="About">
     <div className="cover">
-      <Nav bg="white" mode="multiply" />
+      <Nav bg="white" color="#4e5052" mode="multiply" />
       <div id="about">
         <h3 id="h">Our Company</h3>
         <div className="about-text">
           <p>
-           
+            Above all, our goal is to provide the Hanover community with a
+            variety of e-commerce solutions tailored to individual needs.
+            Perhaps you already have a particular platform in mind and need some
+            additional help setting it up or maintaining it. Perhaps you want a
+            simple online store using tools that automate most of the process.
+            Perhaps you need a fully customized online business that's built
+            from scratch with lots of bells and whistles. Whatever the case, we
+            will help you identify your needs and find the solution that's most
+            practical for you. Please do not hesitate to contact us for a free
+            consultation.
           </p>
         </div>{" "}
         <h3 id="h">Our Team</h3>
@@ -81,6 +90,8 @@ const About = () => (
         font-size: 16px;
         color: #4e5052;
         text-transform: capitalize;
+        margin-top: 0;
+        font-weight: 300;
       }
       .row {
         display: grid;
@@ -91,15 +102,16 @@ const About = () => (
         max-width: 800px;
       }
       .name {
-        margin-bottom: 5px;
-        font-size: 22px;
+        margin-bottom: -8px;
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: 400;
       }
       .cover {
         position: relative;
+        padding-bottom: 100px;
         min-height: 600px;
-        background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
+        background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
       }
 
       #about {
@@ -111,8 +123,8 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         padding-top: 30px;
 
         font-size: 24px;
-        font-weight: 600;
-        color: rgb(47, 47, 47);
+        font-weight: 500;
+        color: #4e5052;
       }
       .company {
         font-weight: 700;
@@ -123,9 +135,9 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         font-size: 18px;
       }
       .about-text {
-        color: #777;
+        color: #4e5052;
         text-align: left;
-       
+
         max-width: 800px;
         margin: 0 auto 0px;
         font-size: 15px;
@@ -134,7 +146,6 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         border-radius: 4px;
         box-shadow: -5px -5px 15px rgba(119, 119, 119, 0.041),
           5px 5px 12px rgba(49, 49, 49, 0.164);
-
       }
       img {
         float: right;
@@ -148,10 +159,16 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
           display: block;
           margin: 0 auto 30px;
         }
-.about-text {
-  padding: 10px;
-  text-align: justify;
-}
+
+        .our-team {
+          margin: 9%;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .about-text {
+          padding: 10px;
+          text-align: justify;
+        }
         #h {
           padding-top: 25px;
           padding-bottom: 0px;
@@ -163,7 +180,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
           margin-right: 30px;
           margin-left: 30px;
 
-          grid-gap: 20px;
+          grid-gap: 10px;
         }
         p {
           font-size: 16px;
