@@ -9,12 +9,7 @@ const About = () => (
         <h3 id="h">Our Company</h3>
         <div className="about-text">
           <p>
-            Garam masala can be made from many different spices, but some of the
-            most common are cinnamon, peppercorns, cardamom, mustard seeds,
-            coriander seeds, cloves, mace, and nutmeg. Garam masala can be made
-            from many different spices, but some of the most common are
-            cinnamon, peppercorns, cardamom, mustard seeds, coriander seeds,
-            cloves, mace, and nutmeg.
+           
           </p>
         </div>{" "}
         <h3 id="h">Our Team</h3>

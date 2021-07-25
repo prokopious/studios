@@ -21,7 +21,7 @@ const Portfolio = () => {
             <div>
               <div className="image">
                 <a href="https://shopify-alpha.vercel.app/">
-                  <img src={"https://www.linkpicture.com/q/farms.jpg"} />
+                  <img src={"https://www.linkpicture.com/q/farms_1.jpg"} />
                 </a>
               </div>
             </div>
