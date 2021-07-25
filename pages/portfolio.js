@@ -35,7 +35,7 @@ const Portfolio = () => {
             margin-bottom: 50px;
             max-width: 900px;
             margin: 0 auto;
-            padding-bottom: 200px;
+            padding-bottom: 400px;
           }
 
           #cover {

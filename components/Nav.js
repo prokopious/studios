@@ -80,10 +80,15 @@ export default function Nav(props) {
       <style jsx>{`
         .navbar {
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.116);
-          padding-top: 10px;
-          padding-bottom: 10px;
+        
         }
 
+    
+
+.navbar-item {
+
+background-color: transparent;
+}
         #hanover {
           font-size: 20px;
         }
