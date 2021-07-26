@@ -1,14 +1,19 @@
 import ContactForm from "../components/ContactForm"
 import Layout from "../components/Layout"
 import Nav from "../components/Nav"
+import ClientOnly from "../components/ClientOnly";
+import Contact from "../components/Contact";
 
-export default function Contact() {
+export default function contact() {
   return (
     <Layout>
       <div className="cover" id="contact">
       <Nav bg="transparent" color="#535353" mode="normal" />
         <h3 id="h">Contact Us</h3>
-        <ContactForm />
+      
+        <ClientOnly>
+          <Contact />
+        </ClientOnly>
       </div>
       <style jsx>{`
         #h {

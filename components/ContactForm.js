@@ -1,3 +1,5 @@
+import Router from "next/router";
+
 export default function ContactForm() {
   return (
     <div>
@@ -7,6 +9,7 @@ export default function ContactForm() {
         action="/success"
         data-netlify="true"
         method="POST"
+        onSubmit={() => Router.push("/success")}
       >
         <input type="hidden" name="form-name" value="contact" />
         <p>

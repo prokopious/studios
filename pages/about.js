@@ -9,16 +9,9 @@ const About = () => (
         <h3 id="h">Our Company</h3>
         <div className="about-text">
           <p>
-            Above all, our goal is to provide the Hanover community with a
-            variety of e-commerce solutions tailored to individual needs.
-            Perhaps you already have a particular platform in mind and need some
-            additional help setting it up or maintaining it. Perhaps you want a
-            simple online store using tools that automate most of the process.
-            Perhaps you need a fully customized online business that's built
-            from scratch with lots of bells and whistles. Whatever the case, we
-            will help you identify your needs and find the solution that's most
-            practical for you. Please do not hesitate to contact us for a free
-            consultation.
+          Our goal is to provide small businesses within our local community a variety of e-commerce solutions tailored to its specific and individual needs. Hanover Web Studios offers a variety of services to optimize the online vending experience for both the merchant and the customer.
+<br></br><br></br>
+We work with clients in a free, one-on-one personal consultation to identify practical solutions to your small business' specific needs as a digital storefront. Contact us to schedule a consultation to enhance your e-commerce experience. 
           </p>
         </div>{" "}
         <h3 id="h">Our Team</h3>
