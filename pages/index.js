@@ -36,7 +36,7 @@ const Homepage = () => (
       }
       .cover {
         position: relative;
-        min-height: 600px;
+        min-height: 100vh;
         mix-blend-mode: darken;
         background: url("../static/st2.jpg") no-repeat center center;
         background-size: cover;

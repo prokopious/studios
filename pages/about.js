@@ -4,7 +4,7 @@ import Nav from "../components/Nav"
 const About = () => (
   <Layout title="About">
     <div className="cover">
-      <Nav bg="white" color="#4e5052" mode="multiply" />
+    <Nav bg="transparent" color="#535353" mode="normal" />
       <div id="about">
         <h3 id="h">Our Company</h3>
         <div className="about-text">
@@ -58,7 +58,7 @@ const About = () => (
         padding: 50px 40px;
         margin-bottom: 30px;
 
-        mix-blend-mode: hard soft-light;
+
         background-color: #ffffff00;
         text-align: center;
         overflow: hidden;
@@ -84,6 +84,7 @@ const About = () => (
         border-radius: 50%;
         transform: scale(1);
         transition: all 0.9s ease 0s;
+
       }
       .our-team .title {
         display: block;
@@ -92,6 +93,7 @@ const About = () => (
         text-transform: capitalize;
         margin-top: 0;
         font-weight: 300;
+        mix-blend-mode: color-burn;
       }
       .row {
         display: grid;
@@ -106,11 +108,13 @@ const About = () => (
         margin-top: 10px;
         font-size: 25px;
         font-weight: 400;
+        mix-blend-mode: color-dodge;
       }
       .cover {
         position: relative;
+     
         padding-bottom: 100px;
-        min-height: 600px;
+        min-height: 100vh;
         background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
       }
 
@@ -121,10 +125,10 @@ const About = () => (
       #h {
         margin-top: 0;
         padding-top: 30px;
-
+      
         font-size: 24px;
         font-weight: 500;
-        color: #4e5052;
+        color: #535353;
       }
       .company {
         font-weight: 700;
@@ -137,7 +141,7 @@ const About = () => (
       .about-text {
         color: #4e5052;
         text-align: left;
-
+        mix-blend-mode: hard-light;
         max-width: 800px;
         margin: 0 auto 0px;
         font-size: 15px;
@@ -152,6 +156,7 @@ const About = () => (
         margin: 10px 0 20px 20px;
         width: 100x;
         mix-blend-mode: normal;
+    
       }
       @media (max-width: 600px) {
         .about-text img {

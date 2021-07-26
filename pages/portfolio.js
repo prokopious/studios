@@ -6,7 +6,7 @@ const Portfolio = () => {
     <>
       <Layout>
         <div id="cover">
-          <Nav mode="multiply" bg="white" color="#4e5052" />
+        <Nav bg="transparent" color="#535353" mode="normal" />
           <h3 id="h">Portfolio</h3>
           <div className="gallery">
             <div>
@@ -41,7 +41,7 @@ const Portfolio = () => {
           #cover {
             position: relative;
             background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-
+min-height: 100vh;
             background-size: cover;
           }
           img {
@@ -74,7 +74,7 @@ const Portfolio = () => {
 
             font-size: 24px;
             font-weight: 500;
-            color: #4e5052;
+            color: #535353;
           }
 
           @media (max-width: 700px) {
