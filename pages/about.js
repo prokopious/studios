@@ -17,8 +17,8 @@ const About = () => (
             <br></br>
             <br></br>
             We work with clients in a free, one-on-one personal consultation to
-            identify practical solutions in the creation and maintenance of your
-            digital storefront. Contact us to schedule a consultation and
+            identify practical solutions in the creation and maintenance of
+            digital storefronts. Contact us to schedule a consultation and
             enhance your e-commerce experience.
           </p>
         </div>{" "}
