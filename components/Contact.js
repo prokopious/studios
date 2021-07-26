@@ -34,18 +34,18 @@ const CreateEmail = () => {
   })
 
   return (
-    <div className="box">
-      <div className="color">
+    <div>
+      <div>
         <form
           onSubmit={e => {
             e.preventDefault()
             createEmail().then(Router.push("/success"))
           }}
         >
-          <div id="ebox">
-            <div className="in">
+          <div>
+            <div>
               <input
-                className="name"
+                className="paragraph"
                 value={formState.id}
                 onChange={e =>
                   setFormState({
@@ -57,9 +57,9 @@ const CreateEmail = () => {
                 placeholder="Name"
               />
             </div>
-            <div className="in">
+            <div>
               <input
-                className="email"
+                className="paragraph"
                 value={formState.author}
                 onChange={e =>
                   setFormState({
@@ -71,9 +71,9 @@ const CreateEmail = () => {
                 placeholder="Email"
               />
             </div>
-            <div className="in">
+            <div>
               <input
-                className="subject"
+                className="paragraph"
                 value={formState.subject}
                 onChange={e =>
                   setFormState({
@@ -85,9 +85,9 @@ const CreateEmail = () => {
                 placeholder="Subject"
               />
             </div>
-            <div className="in">
+            <div>
               <textarea
-                className="content"
+                className="paragraph2"
                 value={formState.content}
                 onChange={e =>
                   setFormState({
@@ -101,68 +101,48 @@ const CreateEmail = () => {
             </div>
             <div>
               {" "}
-              <button className="bu">Submit</button>
+              <button id="buttt">Submit</button>
             </div>
           </div>
         </form>
       </div>
       <style jsx>
         {`
-          .color {
-            height: 100vw;
-            padding-left: 5%;
-            padding-right: 5%;
-            padding-top: 30px;
- 
+          .paragraph {
+            width: 300px;
+            margin-bottom: 5px;
+            height: 35px;
+            border-radius: 3px;
+            border: transparent;
+            box-shadow: -5px -5px 15px rgba(119, 119, 119, 0.041),
+              5px 5px 12px rgba(49, 49, 49, 0.164);
+            padding-left: 5px;
           }
 
-          
+          #buttt {
+            border-radius: 3px;
+            background-color: rgb(255, 255, 255);
+            padding: 3px 27px;
+            border: transparent;
 
-          .box {
-            background-color: #beb9cd;
-            padding-bottom: 400px;
-          }
-
-          #ebox {
-            display: grid;
-            grid-template-columns: 1fr;
-            margin: 18%;
-            margin-top: 2%;
-            color: black;
-          }
-          .cont {
-            margin-bottom: 10px;
-          }
-          input {
-            background-color: whitesmoke;
-            padding: 10px;
-            width: 100%;
-            margin-bottom: 10px;
-            border-radius: 4px;
-          }
-
-          .bu {
-            background-color: whitesmoke;
-            padding: 5px 14px;
-            margin-top: 10px;
+            box-shadow: -5px -5px 15px rgba(119, 119, 119, 0.041),
+              5px 5px 12px rgba(49, 49, 49, 0.164);
             color: gray;
-            border-radius: 4px;
           }
-          textarea {
-            background-color: whitesmoke;
-            border-radius: 4px;
-            padding: 10px;
-            width: 100%;
+
+          .paragraph2 {
+            width: 300px;
+            margin-top: 2px;
             height: 200px;
+            border-radius: 3px;
+
+            border: transparent;
+            padding: 5px;
+            box-shadow: -5px -5px 15px rgba(119, 119, 119, 0.041),
+              5px 5px 12px rgba(49, 49, 49, 0.164);
           }
 
           @media screen and (max-width: 600px) {
-            #ebox {
-              display: grid;
-              grid-template-columns: 1fr;
-              margin: 0%;
-              color: black;
-            }
           }
         `}
       </style>
