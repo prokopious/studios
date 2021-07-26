@@ -4,14 +4,22 @@ import Nav from "../components/Nav"
 const About = () => (
   <Layout title="About">
     <div className="cover">
-    <Nav bg="transparent" color="#535353" mode="normal" />
+      <Nav bg="transparent" color="#535353" mode="normal" />
       <div id="about">
         <h3 id="h">Our Company</h3>
         <div className="about-text">
           <p>
-          Our goal is to provide small businesses within our local community a variety of e-commerce solutions tailored to its specific and individual needs. Hanover Web Studios offers a variety of services to optimize the online vending experience for both the merchant and the customer.
-<br></br><br></br>
-We work with clients in a free, one-on-one personal consultation to identify practical solutions to your small business' specific needs as a digital storefront. Contact us to schedule a consultation to enhance your e-commerce experience. 
+            Our goal is to provide small businesses within our local community a
+            variety of e-commerce solutions tailored to their specific and
+            individual needs. Hanover Web Studios offers a variety of services
+            to optimize the online vending experience for both the merchant and
+            the customer.
+            <br></br>
+            <br></br>
+            We work with clients in a free, one-on-one personal consultation to
+            identify practical solutions in the creation and maintenance of your
+            digital storefront. Contact us to schedule a consultation and
+            enhance your e-commerce experience.
           </p>
         </div>{" "}
         <h3 id="h">Our Team</h3>
@@ -51,7 +59,6 @@ We work with clients in a free, one-on-one personal consultation to identify pra
         padding: 50px 40px;
         margin-bottom: 30px;
 
-
         background-color: #ffffff00;
         text-align: center;
         overflow: hidden;
@@ -77,7 +84,6 @@ We work with clients in a free, one-on-one personal consultation to identify pra
         border-radius: 50%;
         transform: scale(1);
         transition: all 0.9s ease 0s;
-
       }
       .our-team .title {
         display: block;
@@ -105,7 +111,7 @@ We work with clients in a free, one-on-one personal consultation to identify pra
       }
       .cover {
         position: relative;
-     
+
         padding-bottom: 100px;
         min-height: 100vh;
         background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
@@ -118,7 +124,7 @@ We work with clients in a free, one-on-one personal consultation to identify pra
       #h {
         margin-top: 0;
         padding-top: 30px;
-      
+
         font-size: 24px;
         font-weight: 500;
         color: #535353;
@@ -149,7 +155,6 @@ We work with clients in a free, one-on-one personal consultation to identify pra
         margin: 10px 0 20px 20px;
         width: 100x;
         mix-blend-mode: normal;
-    
       }
       @media (max-width: 600px) {
         .about-text img {
