@@ -4,9 +4,9 @@ import Nav from "../components/Nav"
 const About = () => (
   <Layout title="About">
     <div className="cover">
-      <Nav bg="transparent" color="#535353" mode="normal" />
+      <Nav bg="transparent" color="2c2c2c" mode="normal" />
       <div id="about">
-        <h3 id="h">Our Company</h3>
+        <h3 className="h">Our Company</h3>
         <div className="about-text">
           <p>
             Our goal is to provide small businesses within our local community a
@@ -22,7 +22,7 @@ const About = () => (
             enhance your e-commerce experience.
           </p>
         </div>{" "}
-        <h3 id="h">Our Team</h3>
+        <h3 className="h">Our Team</h3>
         <div className="cont">
           <div className="row">
             <div className="our-team">
@@ -58,7 +58,7 @@ const About = () => (
       .our-team {
         padding: 50px 40px;
         margin-bottom: 30px;
-
+        color: #2c2c2c;
         background-color: #ffffff00;
         text-align: center;
         overflow: hidden;
@@ -110,24 +110,23 @@ const About = () => (
         mix-blend-mode: color-dodge;
       }
       .cover {
-        position: relative;
-
+            position: relative;
         padding-bottom: 100px;
         min-height: 100vh;
-        background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-      }
+        background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+        }
 
       #about {
         margin-top: 0px;
       }
 
-      #h {
+      .h {
         margin-top: 0;
         padding-top: 30px;
 
         font-size: 24px;
         font-weight: 500;
-        color: #535353;
+        color: #2c2c2c;
       }
       .company {
         font-weight: 700;
@@ -138,7 +137,7 @@ const About = () => (
         font-size: 18px;
       }
       .about-text {
-        color: #4e5052;
+        color: #2c2c2c;
         text-align: left;
         mix-blend-mode: hard-light;
         max-width: 800px;
@@ -156,6 +155,10 @@ const About = () => (
         width: 100x;
         mix-blend-mode: normal;
       }
+
+      .name {
+        color: rgba(255, 255, 255, 0.698);
+      }
       @media (max-width: 600px) {
         .about-text img {
           float: none;
@@ -170,7 +173,7 @@ const About = () => (
         }
         .about-text {
           padding: 10px;
-          text-align: justify;
+          
         }
         #h {
           padding-top: 25px;
