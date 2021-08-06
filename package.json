@@ -21,12 +21,13 @@
   },
   "homepage": "https://github.com/kheruc/rt-fistudio#readme",
   "dependencies": {
-    "bulma": "^0.9.3",
-    "@apollo/react-hooks": "^4.0.0",
-    "next": "^9.0.5",
-    "graphql": "^15.5.0",
-    "react": "^16.9.0",
     "@apollo/client": "^3.3.20",
+    "@apollo/react-hooks": "^4.0.0",
+    "axios": "^0.21.1",
+    "bulma": "^0.9.3",
+    "graphql": "^15.5.0",
+    "next": "^9.0.5",
+    "react": "^16.9.0",
     "react-bulma-components": "^4.0.7",
     "react-dom": "^16.9.0"
   },
