@@ -2,6 +2,7 @@ import { useState } from "react"
 import axios from "axios"
 import Layout from "../components/Layout"
 import Nav from "../components/Nav"
+import Router from 'next/router'
 
 function App() {
   const [name, setName] = useState("")
@@ -43,7 +44,7 @@ function App() {
         setEmail("")
         setMessage("")
         setLoading(false)
-      })
+      }).then(Router.push('/success'))
       .catch(err => {
         setLoading(false)
         setIsError(true)
