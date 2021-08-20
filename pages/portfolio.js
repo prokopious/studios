@@ -1,12 +1,45 @@
 import Layout from "../components/Layout"
 import Nav from "../components/Nav"
+import { NextSeo } from "next-seo"
 
 const Portfolio = () => {
   return (
     <>
+      {" "}
+      <NextSeo
+        title="Portfolio of RVA e-commerce website designs"
+        description="These RVA, Richmond, and Hanover e-commerce and digital storefront examples are made using a variety of checkout flows, such as Shopify, Snipcart, and Stripe."
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "../static/images/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/images/apple-touch-icon.png",
+            sizes: "180x180",
+          },
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: "../static/images/favicon-32x32.png",
+          },
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: "../static/images/favicon-32x32.png",
+          },
+          {
+            rel: "manifest",
+            href: "/manifest.json",
+          },
+        ]}
+      />
       <Layout>
         <div id="cover">
-        <Nav bg="transparent" color="#535353" mode="normal" />
+          <Nav bg="transparent" color="#535353" mode="normal" />
           <h3 id="h">Portfolio</h3>
           <div className="gallery">
             <div>
@@ -41,7 +74,7 @@ const Portfolio = () => {
           #cover {
             position: relative;
             background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-min-height: 100vh;
+            min-height: 100vh;
             background-size: cover;
           }
           img {
