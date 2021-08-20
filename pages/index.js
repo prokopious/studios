@@ -103,7 +103,7 @@ const Homepage = () => (
             border-radius: 3px;
           }
           #other {
-            padding-top: 5vw;
+            padding-top: 10vw;
             padding-bottom: 0;
             padding-right: 10vw;
             padding-left: 10vw;
@@ -122,6 +122,10 @@ const Homepage = () => (
             font-size: calc(16px + 1vw);
             font-weight: 600;
             color: black;
+          }
+
+          #other {
+
           }
 
           #boxy {
