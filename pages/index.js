@@ -122,12 +122,17 @@ const Homepage = () => (
             font-weight: 600;
             color: black;
           }
-
+          #other {
+            padding-top: 10vw;
+            padding-bottom: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+          }
           #boxy {
             padding-right: calc(0.5em + 0.3vw);
             padding-left: calc(0.5em + 0.3vw);
-            padding-top: calc(2em + 0.7vw);
-            padding-bottom: calc(2em + 0.7vw);
+            padding-top: calc(2em + 0.2vw);
+            padding-bottom: calc(2em + 0.2vw);
             background-color: $navbar-background-color;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
             border-radius: 3px;
