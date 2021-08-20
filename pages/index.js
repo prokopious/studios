@@ -1,10 +1,9 @@
-import Layout from "../components/Layout"
-import Nav from "../components/Nav"
-import { NextSeo } from 'next-seo';
+import Layout from "../components/Layout";
+import Nav from "../components/Nav";
+import { NextSeo } from "next-seo";
 
 const Homepage = () => (
   <>
-    {" "}
     <NextSeo
       title="Hanover Web Studios E-Commerce Website Designs"
       description="Small business web design. We serve Richmond, RVA, Hanover, Mechanicsville, and Henrico Virginia with online shops, storefronts, and checkout flows."
@@ -109,7 +108,7 @@ const Homepage = () => (
             padding-left: 10vw;
           }
           #email {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
           }
           #phone {
@@ -124,13 +123,9 @@ const Homepage = () => (
             color: black;
           }
 
-          #other {
-
-          }
-
           #boxy {
-            padding-right: calc(0.5em + 0.7vw);
-            padding-left: calc(0.5em + 0.7vw);
+            padding-right: calc(0.5em + 0.3vw);
+            padding-left: calc(0.5em + 0.3vw);
             padding-top: calc(2em + 0.7vw);
             padding-bottom: calc(2em + 0.7vw);
             background-color: $navbar-background-color;

@@ -1,7 +1,6 @@
 import Layout from "../components/Layout"
 import Nav from "../components/Nav"
-import { NextSeo } from 'next-seo';
-
+import { NextSeo } from "next-seo"
 
 const About = () => (
   <>
@@ -10,33 +9,32 @@ const About = () => (
       description="We provide Hanover, RVA, Richmond, and Mechanicsville small businesses and vendors with web design and e-commerce solutions."
       additionalLinkTags={[
         {
-          rel: 'icon',
-          href: '../static/images/favicon.ico',
+          rel: "icon",
+          href: "../static/images/favicon.ico",
         },
         {
-          rel: 'apple-touch-icon',
+          rel: "apple-touch-icon",
           href: "/images/apple-touch-icon.png",
-          sizes: '180x180'
-        },
-        {      
-          rel: "icon",
-          type: "image/png",
-          sizes: "32x32",
-          href: "../static/images/favicon-32x32.png"
-        },
-        {      
-          rel: "icon",
-          type: "image/png",
-          sizes: "32x32",
-          href: "../static/images/favicon-32x32.png"
+          sizes: "180x180",
         },
         {
-          rel: 'manifest',
-          href: '/manifest.json'
-        }
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: "../static/images/favicon-32x32.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: "../static/images/favicon-32x32.png",
+        },
+        {
+          rel: "manifest",
+          href: "/manifest.json",
+        },
       ]}
-      
-    />  
+    />
     <Layout>
       <div className="cover">
         <Nav bg="transparent" color="2c2c2c" mode="normal" />
@@ -188,7 +186,7 @@ const About = () => (
           mix-blend-mode: hard-light;
           max-width: 800px;
           margin: 0 auto 0px;
-          font-size: 15px;
+          font-size: 16px;
           background-color: rgba(255, 255, 255, 0);
           padding: 50px;
           border-radius: 4px;
