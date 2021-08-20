@@ -33,13 +33,7 @@ export default function App() {
   } else {
     return (
       <>
-        <Meta
-          title="This Is A Title | Website Name"
-          desc="This is the description"
-          canonical="https://www.someurl.com"
-          css="/static/css/styles.css"
-          js="/static/js/scripts.js"
-        />
+  
         <Layout>
           <div id="cover">
             <Nav bg="transparent" color="#535353" mode="normal" />
