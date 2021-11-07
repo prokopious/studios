@@ -1,26 +1,35 @@
 import axios from "axios"
 import React from "react"
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo"
 import Layout from "../components/Layout"
 import Nav from "../components/Nav"
 import { useState, useEffect } from "react"
 
-
-const baseURL = "https://mysterious-wildwood-19282.herokuapp.com/demo/all"
+const baseURL =
+  "https://hz2legl1t5.execute-api.us-east-1.amazonaws.com/prod/messages"
 
 export default function App() {
   const [emails, setEmails] = useState(null)
 
   useEffect(() => {
-    axios.get(baseURL).then(response => {
-      setEmails(response.data)
-    })
+    axios
+      .get(baseURL, {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        crossDomain: true,
+      })
+      .then(response => {
+        setEmails(response.data.body.Items)
+      })
   }, [])
 
+  let messages = []
+  messages.push(emails)
   if (!emails) {
     return (
       <>
-
         <Layout>
           <div id="cover">
             <Nav bg="transparent" color="#535353" mode="normal" />
@@ -33,18 +42,19 @@ export default function App() {
   } else {
     return (
       <>
-  
         <Layout>
           <div id="cover">
             <Nav bg="transparent" color="#535353" mode="normal" />
             <div id="h">Messages</div>
             <div id="emailbox">
-              {emails.map(email => (
+              {emails.map(message => (
                 <>
                   <div>
-                    <div>{email.name} </div> <div>{email.email} </div>
+                    <div>{message.id.S} </div>
+                    <div>{message.email.S} </div>
+                    <div>{message.message.S} </div>
                   </div>
-                  <div>{email.message}</div>
+
                   <hr></hr>
                 </>
               ))}

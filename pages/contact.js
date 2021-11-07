@@ -6,42 +6,33 @@ import Router from "next/router"
 import { NextSeo } from "next-seo"
 
 function App() {
-  const [name, setName] = useState("")
+  const [id, setId] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [loading, setLoading] = useState(false)
   const [isError, setIsError] = useState(false)
   const [data, setData] = useState(null)
 
-  var details = {
-    name: "test@gmail.com",
-    email: "Password!",
-    message: "password",
-  }
+
 
   const handleSubmit = () => {
     setLoading(true)
     setIsError(false)
     const details = {
-      name: name,
+      id: id,
       email: email,
       message: message,
     }
-    const formBody = Object.keys(details)
-      .map(
-        key => encodeURIComponent(key) + "=" + encodeURIComponent(details[key])
-      )
-      .join("&")
-    console.log(data)
-
+    const formBody = JSON.stringify(details);
+    console.log(formBody)
     axios
       .post(
-        "https://mysterious-wildwood-19282.herokuapp.com/demo/add",
+        "https://hz2legl1t5.execute-api.us-east-1.amazonaws.com/prod/messages",
         formBody
       )
       .then(res => {
         setData(res.data)
-        setName("")
+        setId("")
         setEmail("")
         setMessage("")
         setLoading(false)
@@ -97,11 +88,11 @@ function App() {
             <input
               type="text"
               className="form-control"
-              id="name"
+              id="id"
               className="paragraph"
               placeholder="Name.."
-              value={name}
-              onChange={e => setName(e.target.value)}
+              value={id}
+              onChange={e => setId(e.target.value)}
             />
           </div>
           <div classNames="form-group">
